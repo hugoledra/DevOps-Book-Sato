@@ -1,3 +1,3 @@
 .vagrant
-./manifests/devopsnapratica.war.tar.gz
-./manifests/devopsnapratica.war
+manifests/devopsnapratica.war.tar.gz
+manifests/devopsnapratica.war
