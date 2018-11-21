@@ -1,0 +1,17 @@
+File nagios => /etc/apt/preferences.d/
+
+File raring.list => /etc/apt/sources.list.d/
+
+apt-get update
+
+sudo apt-get install nagios3
+
+Na configuração do nagios, em postfix escolha "internet site"
+Digite em seguida o nome do sistema de email "monitor.lojavirtualdevops.com.br"
+Por fim, defina a senha do nagios.
+
+File loja_virtual.cfg => /etc/nagios3/conf.d/
+
+O arquivo "contacts_nagios2.cfg" em /etc/nagios3/conf.d/ contém o endereço do administrador para envio de alertas.
+
+Recarga do nagios: sudo service nagios3 reload
