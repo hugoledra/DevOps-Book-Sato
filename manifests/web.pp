@@ -56,6 +56,11 @@ file {"/var/lib/tomcat7/conf/context.xml":
   notify => Service["tomcat7"],
 }
 
+exec {"get-war":
+  command => "/usr/bin/wget -P /vagrant/manifests/ https://bitbucket.org/hugofabianoledra/devops-book-sato/downloads/devopsnapratica.war",
+  unless => "/usr/bin/test -f /vagrant/manifests/devopsnapratica.war",
+}
+
 file {"/var/lib/tomcat7/webapps/devopsnapratica.war":
   owner => tomcat7,
   group => tomcat7,
