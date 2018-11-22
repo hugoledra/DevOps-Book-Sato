@@ -59,6 +59,7 @@ file {"/var/lib/tomcat7/conf/context.xml":
 exec {"get-war":
   command => "/usr/bin/wget -P /vagrant/manifests/ https://bitbucket.org/hugofabianoledra/devops-book-sato/downloads/devopsnapratica.war",
   unless => "/usr/bin/test -f /vagrant/manifests/devopsnapratica.war",
+  timeout => 0,
   require => Package["tomcat7"],
 }
 
