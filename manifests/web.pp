@@ -59,6 +59,7 @@ file {"/var/lib/tomcat7/conf/context.xml":
 exec {"get-war":
   command => "/usr/bin/wget -P /vagrant/manifests/ https://bitbucket.org/hugofabianoledra/devops-book-sato/downloads/devopsnapratica.war",
   unless => "/usr/bin/test -f /vagrant/manifests/devopsnapratica.war",
+  require => Package["tomcat7"],
 }
 
 file {"/var/lib/tomcat7/webapps/devopsnapratica.war":
@@ -66,6 +67,6 @@ file {"/var/lib/tomcat7/webapps/devopsnapratica.war":
   group => tomcat7,
   mode => 0644,
   source => "/vagrant/manifests/devopsnapratica.war",
-  require => Package["tomcat7"],
+  require => Exec["get-war"],
   notify => Service["tomcat7"],
 }
