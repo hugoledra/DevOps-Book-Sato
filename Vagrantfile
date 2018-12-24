@@ -2,7 +2,7 @@ Vagrant.configure("2") do |config|
     
     config.vm.box = "hashicorp/precise64"
     config.vm.provider "virtualbox" do |v|
-        v.memory = 512
+        v.memory = 1024
     end
 
     config.vm.define "db" do |db_config|
