@@ -23,6 +23,8 @@ Install Nagios:
 $vagrant ssh monitor
 $cd /vagrant/nagios
 $sudo ./install_nagios.sh
+
+Access the services in the urls file: [urls](https://github.com/hugoledra/DevOps-Book-Sato/blob/master/urls)
 ```
 
 ###### This project is based on the book DevOps na Prática by Danilo Sato > [Buy the Kindle book here (Portuguese language)](https://www.amazon.com.br/DevOps-pr%C3%A1tica-software-confi%C3%A1vel-automatizada-ebook/dp/B00VRS7WRS/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1545829621&sr=1-1&keywords=devops)
