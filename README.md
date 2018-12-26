@@ -5,8 +5,10 @@
 
 #### Summary of this project
 This project implements only part of what is demonstrated and implemented in the book.
+
 Using Vagrant and Puppet, the entire base infrastructure for deploying the application is created.
-Vagrant creates 3 virtual machines, one to be the database, one to be the web server, and a third machine to be the monitor of the services and servers. Puppet is responsible for making all necessary installations and configurations on these servers, to make the application available online.
+Vagrant creates three virtual machines, one to be the database, one to be the web server, and a third machine to be the monitor of the services and servers. Puppet is responsible for making all necessary installations and configurations on these servers, to make the application available online.
+
 The virtual store is a web application written in Java on the [Broadleaf Commerce platform](http://www.broadleafcommerce.org/), it is a flexible platform that allows to create a complete and totally customized virtual store.
 
 #### Requirements to run this project
