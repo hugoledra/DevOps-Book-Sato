@@ -22,7 +22,7 @@ $vagrant provision
 Install Nagios:
 $vagrant ssh monitor
 $cd /vagrant/nagios
-$sudo ./install_nagios.sh
+$./install_nagios.sh
 ```
 Access the services in the urls file: [urls](https://github.com/hugoledra/DevOps-Book-Sato/blob/master/urls)
 
